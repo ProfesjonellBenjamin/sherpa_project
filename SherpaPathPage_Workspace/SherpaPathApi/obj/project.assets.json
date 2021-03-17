@@ -4763,11 +4763,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\benja\\Downloads\\Find_Method_Implemented_SherpaPathPage_Workspace\\SherpaPathPage_Workspace\\SherpaPathApi\\SherpaPathApi.csproj",
+      "projectUniqueName": "C:\\Users\\benja\\Desktop\\new_sherpa\\sherpa_project\\SherpaPathPage_Workspace\\SherpaPathApi\\SherpaPathApi.csproj",
       "projectName": "SherpaPathApi",
-      "projectPath": "C:\\Users\\benja\\Downloads\\Find_Method_Implemented_SherpaPathPage_Workspace\\SherpaPathPage_Workspace\\SherpaPathApi\\SherpaPathApi.csproj",
+      "projectPath": "C:\\Users\\benja\\Desktop\\new_sherpa\\sherpa_project\\SherpaPathPage_Workspace\\SherpaPathApi\\SherpaPathApi.csproj",
       "packagesPath": "C:\\Users\\benja\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\benja\\Downloads\\Find_Method_Implemented_SherpaPathPage_Workspace\\SherpaPathPage_Workspace\\SherpaPathApi\\obj\\",
+      "outputPath": "C:\\Users\\benja\\Desktop\\new_sherpa\\sherpa_project\\SherpaPathPage_Workspace\\SherpaPathApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

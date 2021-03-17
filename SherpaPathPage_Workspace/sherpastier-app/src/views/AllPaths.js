@@ -4,15 +4,18 @@ import Col from 'react-bootstrap/Col';
 
 import {PathProvider} from '../contexts/PathContext';
 import PathList from '../components/path/PathList';
+import PathItem from '../components/path/PathItem';
 
-const Home = () => {
+const AllPaths = () => {
     return (
         <Row>
             <Col>
                 <section>
-                    <h3>Sherpastier</h3>
+                    <h3>Alle Stier Testing:</h3>
 
-             
+                    <PathProvider>
+                        <PathList></PathList>
+                    </PathProvider>
                 </section>
 
             </Col>
@@ -21,4 +24,4 @@ const Home = () => {
         
     )
 }
-export default Home;
+export default AllPaths;

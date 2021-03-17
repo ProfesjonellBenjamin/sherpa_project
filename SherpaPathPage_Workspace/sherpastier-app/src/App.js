@@ -11,6 +11,7 @@ import About from './views/About.js';
 import Kart from './views/Kart.js';
 import Admin from './views/Admin.js';
 import { Jumbotron } from './components/Jumbotron.js';
+import AllPaths from './views/AllPaths.js';
 
 const Styles = styled.div`
 .navbar {
@@ -43,6 +44,7 @@ function App() {
                 <Nav.Link as={Link} to="/about">Om oss</Nav.Link>
                 <Nav.Link as={Link} to="/kart">Kart</Nav.Link>
                 <Nav.Link as={Link} to="/admin">admin</Nav.Link>
+                <Nav.Link as={Link} to="/list">list</Nav.Link>
 
 
               </Nav>
@@ -59,6 +61,7 @@ function App() {
               <Route path="/about" component={About}></Route>
               <Route path="/kart" component={Kart}></Route>
               <Route path="/admin" component={Admin}></Route>
+              <Route path="/list" component={AllPaths}></Route>
 
             </Switch>
           </main>
