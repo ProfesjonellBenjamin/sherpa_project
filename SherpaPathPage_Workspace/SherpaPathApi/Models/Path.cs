@@ -11,7 +11,7 @@ namespace SherpaPathApi.Models{
         public string Id { get; set; }
         public string Name { get; set; }
         //jeg kan sette required på felt for å gi feilmelding om det mangler
-        public decimal Longitude { get; set; }       
+        public decimal Longitude { get; set; }
         public decimal Latitude { get; set; }
         
         

@@ -48,13 +48,16 @@ const MiniMap = (props) => {
             </div>
         </Marker>
           } else {
-            return <InfoWindow key={props.id}
+            return <Marker>
+                <InfoWindow key={props.id}
                         position={{lat: props.latitude, lng: props.longitude}}
                     >
                         <div>
                             {props.name}
                         </div>
                     </InfoWindow>
+                </Marker>
+                
           }
         })()
       }

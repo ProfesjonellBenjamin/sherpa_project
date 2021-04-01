@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col';
 import {PathProvider} from '../contexts/PathContext';
 import PathList from '../components/path/PathList';
 import PathItem from '../components/path/PathItem';
+import PathUpdate from '../components/path/PathUpdate';
 
 const AllPaths = () => {
     return (
@@ -15,7 +16,9 @@ const AllPaths = () => {
 
                     <PathProvider>
                         <PathList></PathList>
+                        <PathUpdate></PathUpdate>
                     </PathProvider>
+
                 </section>
 
             </Col>

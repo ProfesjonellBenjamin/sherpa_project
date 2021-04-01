@@ -3,6 +3,13 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+import axios from 'axios';
+import PathCreate from '../components/path/PathCreate';
+import PathUpdate from '../components/path/PathUpdate';
+import PathList from '../components/path/PathList';
+import { PathContext, PathProvider } from '../contexts/PathContext';
+
+//add / delete / update 
 
 const Admin = () => {
     return (
@@ -10,7 +17,11 @@ const Admin = () => {
             <Col>
                 <section>
                     <h3>Admin</h3>
-
+                    <PathProvider>
+                        <PathList/>
+                        <PathCreate/>
+                        <PathUpdate/>
+                    </PathProvider>
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                 </section>
 
