@@ -2,10 +2,12 @@ using SherpaPathApi.Models;
 using SherpaPathApi.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Authorization;
 
 namespace SherpaPathApi.Controllers{
 
     [ApiController]
+    [Authorize]
     [Route("[controller]")]
     public class PathsController : ControllerBase {
 
@@ -16,17 +18,20 @@ namespace SherpaPathApi.Controllers{
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public ActionResult<List<Path>> Get(){
             return _PathsService.Get();
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public ActionResult<Path> Post(Path Path){
             _PathsService.Create( Path );
             return Path;
         }
 
         [HttpDelete("{id:length(24)}")]
+        [Authorize(Roles = "Admin")]
         public IActionResult Delete(string id){
             var Path = _PathsService.Get( id );
 
@@ -39,6 +44,7 @@ namespace SherpaPathApi.Controllers{
         }
 
         [HttpPut("{id:length(24)}")]
+        [Authorize(Roles = "Admin")]
         public IActionResult Put(string id, Path PathIn){
             var selectedPath = _PathsService.Get( id );
 
@@ -52,6 +58,7 @@ namespace SherpaPathApi.Controllers{
         }
         
         [HttpGet("find/{query}")]
+        [AllowAnonymous]
         public ActionResult<List<Path>> Find(string query)
         {
             return _PathsService.Find(query);

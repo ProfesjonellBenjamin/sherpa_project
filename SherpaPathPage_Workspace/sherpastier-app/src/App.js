@@ -12,6 +12,10 @@ import Kart from './views/Kart.js';
 import Admin from './views/Admin.js';
 import { Jumbotron } from './components/Jumbotron.js';
 import AllPaths from './views/AllPaths.js';
+import PathView from './views/PathView';
+import { PathProvider } from './contexts/PathContext.js';
+import AdminView from './views/AdminView.js';
+
 
 const Styles = styled.div`
 .navbar {
@@ -45,6 +49,8 @@ function App() {
                 <Nav.Link as={Link} to="/kart">Kart</Nav.Link>
                 <Nav.Link as={Link} to="/admin">admin</Nav.Link>
                 <Nav.Link as={Link} to="/list">list</Nav.Link>
+                <Nav.Link as={Link} to="/path">path</Nav.Link>
+
 
 
               </Nav>
@@ -57,11 +63,15 @@ function App() {
         <Container>
           <main>
             <Switch>
+
               <Route exact path="/" component={Home}></Route>
               <Route path="/about" component={About}></Route>
               <Route path="/kart" component={Kart}></Route>
-              <Route path="/admin" component={Admin}></Route>
+              <Route path="/admin" component={AdminView}></Route>
               <Route path="/list" component={AllPaths}></Route>
+              
+                <Route path="/path" component={PathView}></Route>
+
 
             </Switch>
           </main>

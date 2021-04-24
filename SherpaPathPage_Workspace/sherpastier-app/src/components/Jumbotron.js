@@ -8,7 +8,7 @@ const Styles = styled.div`
     background: url(${sherpaImage}) no-repeat fixed bottom;
     background-size: cover;
     color: #ccc;
-    height: 300px;
+    height: 220px;
     position: relative;
     z-index: -2;
 }

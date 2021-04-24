@@ -1,0 +1,13 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/projectSettingsUpdater.xml
+/modules.xml
+/contentModel.xml
+/.idea.SherpaPathApi.iml
+# Datasource local storage ignored files
+/../../../../../../../../../../:\Users\GrandSilence\Desktop\mongo_v2\SherpaPathPage_Workspace\SherpaPathApi\.idea\.idea.SherpaPathApi.dir\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

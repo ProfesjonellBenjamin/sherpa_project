@@ -43,9 +43,17 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "AspNetCore.Identity.Mongo": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Cookies": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "MongoDB.Driver": {
               "target": "Package",
-              "version": "[2.11.0, )"
+              "version": "[2.12.2, )"
             }
           },
           "imports": [

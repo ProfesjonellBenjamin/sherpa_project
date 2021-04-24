@@ -16,7 +16,7 @@ const AllPaths = () => {
 
                     <PathProvider>
                         <PathList></PathList>
-                        <PathUpdate></PathUpdate>
+
                     </PathProvider>
 
                 </section>
